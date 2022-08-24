@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDH</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <div class="header-container fixed-top">
+        <header class="d-flex justify-content-between align-items-center header--color navbar px-4">
+            <button class="menus-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <ul class="navbar-item">
+
+                <li class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-search toggle-search">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </li>
+                <li class="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-mail">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-bell">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg><span class="badge badge-success"></span>
+                    </a>
+                </li>
+
+                <li class="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-user">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </header>
+
+    </div>
+    <div class="main-container sidebar-closed sbar-open">
+        <div class="sidebar-wrapper sidebar-theme">
+
+            <nav id="sidebar">
+
+                <ul class="navbar-nav theme-brand d-flex justify-content-center justifyflex-row text-center">
+                    <li class="nav-item theme-logo">
+                        <a href="index.html">
+                            <img src="assets/img/logotipo.png" class="navbar-logo" alt="logo">
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="accordion list-unstyled menu-categories" id="accordionExample">
+                    <li class="menu">
+                        <a href="#home" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-hash">
+                                    <line x1="4" y1="9" x2="20" y2="9"></line>
+                                    <line x1="4" y1="15" x2="20" y2="15"></line>
+                                    <line x1="10" y1="3" x2="8" y2="21"></line>
+                                    <line x1="16" y1="3" x2="14" y2="21"></line>
+                                </svg>
+                                <span>Level 1</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="home" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="javascript:void(0);"> Level 2a </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> Level 2b </a>
+                            </li>
+
+                            <li>
+                                <a href="#level-three" data-bs-toggle="collapse" aria-expanded="false"
+                                    class="dropdown-toggle collapsed"> Level 2c <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg> </a>
+                                <ul class="collapse list-unstyled sub-submenu" id="level-three" data-bs-parent="#pages">
+                                    <li>
+                                        <a href="javascript:void(0);"> Level 3a </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"> Level 3b </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"> Level 3c </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#home" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-hash">
+                                    <line x1="4" y1="9" x2="20" y2="9"></line>
+                                    <line x1="4" y1="15" x2="20" y2="15"></line>
+                                    <line x1="10" y1="3" x2="8" y2="21"></line>
+                                    <line x1="16" y1="3" x2="14" y2="21"></line>
+                                </svg>
+                                <span>Level 1</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="home" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="javascript:void(0);"> Level 2a </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> Level 2b </a>
+                            </li>
+
+                            <li>
+                                <a href="#level-three" data-bs-toggle="collapse" aria-expanded="false"
+                                    class="dropdown-toggle collapsed"> Level 2c <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg> </a>
+                                <ul class="collapse list-unstyled sub-submenu" id="level-three" data-bs-parent="#pages">
+                                    <li>
+                                        <a href="javascript:void(0);"> Level 3a </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"> Level 3b </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"> Level 3c </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu menu-heading">
+                        <div class="heading" style="margin-left: 1rem;"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-minus">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg><span>MENU LEVELS</span></div>
+                    </li>
+                </ul>
+                <ul class="accordion list-unstyled menu-categories" id="accordionExample">
+                    <li class="menu">
+                        <a href="#home" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-hash">
+                                    <line x1="4" y1="9" x2="20" y2="9"></line>
+                                    <line x1="4" y1="15" x2="20" y2="15"></line>
+                                    <line x1="10" y1="3" x2="8" y2="21"></line>
+                                    <line x1="16" y1="3" x2="14" y2="21"></line>
+                                </svg>
+                                <span>Level 1</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="home" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="javascript:void(0);"> Level 2a </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> Level 2b </a>
+                            </li>
+
+                            <li>
+                                <a href="#level-three" data-bs-toggle="collapse" aria-expanded="false"
+                                    class="dropdown-toggle collapsed"> Level 2c <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg> </a>
+                                <ul class="collapse list-unstyled sub-submenu" id="level-three" data-bs-parent="#pages">
+                                    <li>
+                                        <a href="javascript:void(0);"> Level 3a </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"> Level 3b </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"> Level 3c </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#home" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-hash">
+                                    <line x1="4" y1="9" x2="20" y2="9"></line>
+                                    <line x1="4" y1="15" x2="20" y2="15"></line>
+                                    <line x1="10" y1="3" x2="8" y2="21"></line>
+                                    <line x1="16" y1="3" x2="14" y2="21"></line>
+                                </svg>
+                                <span>Level 1</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="home" data-bs-parent="#accordionExample">
+                            <li>
+                                <a href="javascript:void(0);"> Level 2a </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> Level 2b </a>
+                            </li>
+
+                            <li>
+                                <a href="#level-three" data-bs-toggle="collapse" aria-expanded="false"
+                                    class="dropdown-toggle collapsed"> Level 2c <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg> </a>
+                                <ul class="collapse list-unstyled sub-submenu" id="level-three" data-bs-parent="#pages">
+                                    <li>
+                                        <a href="javascript:void(0);"> Level 3a </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"> Level 3b </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"> Level 3c </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu menu-heading">
+                        <div class="heading" style="margin-left: 1rem;"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-minus">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg><span>MENU LEVELS</span></div>
+                    </li>
+                </ul>
+                <div class="ps__rail-x" style="left: 0px; bottom: -8px;">
+                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                </div>
+                <div class="ps__rail-y" style="top: 8px; height: 845px; right: 0px;">
+                    <div class="ps__thumb-y" tabindex="0" style="top: 8px; height: 300px;"></div>
+                </div>
+
+            </nav>
+
+        </div>
+        <div class="main-content" id="content">
+            <div class="layout-px-spacing">
+                <div class="row layout-top-spacing">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-one widget-green">
+                            <div class="widget-heading">
+                                <h6 class="">Title Seccion</h6>
+
+                                <div class="task-action">
+                                    <div class="dropdown">
+                                        <a href="#">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M28 12V7.5C28 6.83696 27.7366 6.20107 27.2678 5.73223C26.7989 5.26339 26.163 5 25.5 5H20.7569C20.2633 5.00001 19.7807 5.14615 19.37 5.42L17.63 6.58C17.2193 6.85385 16.7367 6.99999 16.2431 7H6.5C5.83696 7 5.20107 7.26339 4.73223 7.73223C4.26339 8.20107 4 8.83696 4 9.5V12"
+                                                    stroke="white" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M2.00614 14.1594L3.01989 24.5C3.01989 25.1623 3.28268 25.7975 3.75057 26.2662C4.21847 26.7349 4.85323 26.9988 5.51551 27H26.4843C27.1465 26.9988 27.7813 26.7349 28.2492 26.2662C28.7171 25.7975 28.9799 25.1623 28.9799 24.5L29.9936 14.1594C30.0156 13.8842 29.9804 13.6074 29.8902 13.3465C29.8 13.0855 29.6567 12.8461 29.4694 12.6433C29.2822 12.4404 29.0549 12.2785 28.802 12.1678C28.5491 12.0571 28.276 12 27.9999 12H3.99364C3.71808 12.0008 3.44567 12.0586 3.1935 12.1697C2.94132 12.2808 2.71482 12.4428 2.52821 12.6456C2.3416 12.8483 2.19889 13.0874 2.10906 13.3479C2.01922 13.6084 1.98418 13.8847 2.00614 14.1594V14.1594Z"
+                                                    stroke="white" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pendingTask"
+                                            style="will-change: transform;">
+                                            <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="w-chart">
+
+                                <div class="w-chart-section total-visits-content">
+                                    <div class="w-detail">
+                                        <p class="w-title">Total Visits</p>
+                                        <p class="w-stats">423,964</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="w-chart-section paid-visits-content">
+                                    <div class="w-detail">
+                                        <p class="w-title">Paid Visits</p>
+                                        <p class="w-stats">7,929</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-one widget-purple">
+                            <div class="widget-heading">
+                                <h6 class="">Title Seccion</h6>
+
+                                <div class="task-action">
+                                    <div class="dropdown">
+                                        <a href="#">
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M28 12V7.5C28 6.83696 27.7366 6.20107 27.2678 5.73223C26.7989 5.26339 26.163 5 25.5 5H20.7569C20.2633 5.00001 19.7807 5.14615 19.37 5.42L17.63 6.58C17.2193 6.85385 16.7367 6.99999 16.2431 7H6.5C5.83696 7 5.20107 7.26339 4.73223 7.73223C4.26339 8.20107 4 8.83696 4 9.5V12"
+                                                    stroke="white" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M2.00614 14.1594L3.01989 24.5C3.01989 25.1623 3.28268 25.7975 3.75057 26.2662C4.21847 26.7349 4.85323 26.9988 5.51551 27H26.4843C27.1465 26.9988 27.7813 26.7349 28.2492 26.2662C28.7171 25.7975 28.9799 25.1623 28.9799 24.5L29.9936 14.1594C30.0156 13.8842 29.9804 13.6074 29.8902 13.3465C29.8 13.0855 29.6567 12.8461 29.4694 12.6433C29.2822 12.4404 29.0549 12.2785 28.802 12.1678C28.5491 12.0571 28.276 12 27.9999 12H3.99364C3.71808 12.0008 3.44567 12.0586 3.1935 12.1697C2.94132 12.2808 2.71482 12.4428 2.52821 12.6456C2.3416 12.8483 2.19889 13.0874 2.10906 13.3479C2.01922 13.6084 1.98418 13.8847 2.00614 14.1594V14.1594Z"
+                                                    stroke="white" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pendingTask"
+                                            style="will-change: transform;">
+                                            <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="w-chart">
+
+                                <div class="w-chart-section total-visits-content">
+                                    <div class="w-detail">
+                                        <p class="w-title">Total Visits</p>
+                                        <p class="w-stats">423,964</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="w-chart-section paid-visits-content">
+                                    <div class="w-detail">
+                                        <p class="w-title">Paid Visits</p>
+                                        <p class="w-stats">7,929</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-one">
+                            <div class="widget-heading">
+                                <h6 class="">Title Seccion</h6>
+
+                                <div class="task-action">
+                                    <div class="dropdown">
+                                        <a href="#">
+                                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M28.3335 12V7.5C28.3335 6.83696 28.0701 6.20107 27.6013 5.73223C27.1324 5.26339 26.4965 5 25.8335 5H21.0904C20.5968 5.00001 20.1142 5.14615 19.7035 5.42L17.9635 6.58C17.5528 6.85385 17.0702 6.99999 16.5766 7H6.8335C6.17045 7 5.53457 7.26339 5.06573 7.73223C4.59689 8.20107 4.3335 8.83696 4.3335 9.5V12" stroke="#5D4777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M2.33963 14.1594L3.35338 24.5C3.35338 25.1623 3.61617 25.7975 4.08407 26.2662C4.55196 26.7349 5.18672 26.9988 5.84901 27H26.8178C27.48 26.9988 28.1148 26.7349 28.5827 26.2662C29.0506 25.7975 29.3134 25.1623 29.3134 24.5L30.3271 14.1594C30.3491 13.8842 30.3139 13.6074 30.2237 13.3465C30.1335 13.0855 29.9902 12.8461 29.8029 12.6433C29.6157 12.4404 29.3884 12.2785 29.1355 12.1678C28.8826 12.0571 28.6095 12 28.3334 12H4.32713C4.05157 12.0008 3.77917 12.0586 3.52699 12.1697C3.27482 12.2808 3.04832 12.4428 2.86171 12.6456C2.67509 12.8483 2.53239 13.0874 2.44255 13.3479C2.35271 13.6084 2.31767 13.8847 2.33963 14.1594V14.1594Z" stroke="#5D4777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pendingTask" style="will-change: transform;">
+                                            <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="w-chart">
+
+                                <div class="w-chart-section total-visits-content">
+                                    <div class="w-detail">
+                                        <p class="w-title">Total Visits</p>
+                                        <p class="w-stats">423,964</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="w-chart-section paid-visits-content">
+                                    <div class="w-detail">
+                                        <p class="w-title">Paid Visits</p>
+                                        <p class="w-stats">7,929</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-one">
+                            <div class="widget-heading">
+                                <h6 class="">Title Seccion</h6>
+
+                                <div class="task-action">
+                                    <div class="dropdown">
+                                        <a href="#">
+                                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M28.3335 12V7.5C28.3335 6.83696 28.0701 6.20107 27.6013 5.73223C27.1324 5.26339 26.4965 5 25.8335 5H21.0904C20.5968 5.00001 20.1142 5.14615 19.7035 5.42L17.9635 6.58C17.5528 6.85385 17.0702 6.99999 16.5766 7H6.8335C6.17045 7 5.53457 7.26339 5.06573 7.73223C4.59689 8.20107 4.3335 8.83696 4.3335 9.5V12" stroke="#5D4777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M2.33963 14.1594L3.35338 24.5C3.35338 25.1623 3.61617 25.7975 4.08407 26.2662C4.55196 26.7349 5.18672 26.9988 5.84901 27H26.8178C27.48 26.9988 28.1148 26.7349 28.5827 26.2662C29.0506 25.7975 29.3134 25.1623 29.3134 24.5L30.3271 14.1594C30.3491 13.8842 30.3139 13.6074 30.2237 13.3465C30.1335 13.0855 29.9902 12.8461 29.8029 12.6433C29.6157 12.4404 29.3884 12.2785 29.1355 12.1678C28.8826 12.0571 28.6095 12 28.3334 12H4.32713C4.05157 12.0008 3.77917 12.0586 3.52699 12.1697C3.27482 12.2808 3.04832 12.4428 2.86171 12.6456C2.67509 12.8483 2.53239 13.0874 2.44255 13.3479C2.35271 13.6084 2.31767 13.8847 2.33963 14.1594V14.1594Z" stroke="#5D4777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pendingTask" style="will-change: transform;">
+                                            <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="w-chart">
+
+                                <div class="w-chart-section total-visits-content">
+                                    <div class="w-detail">
+                                        <p class="w-title">Total Visits</p>
+                                        <p class="w-stats">423,964</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="w-chart-section paid-visits-content">
+                                    <div class="w-detail">
+                                        <p class="w-title">Paid Visits</p>
+                                        <p class="w-stats">7,929</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-one">
+                            <div class="widget-heading">
+                                <h6 class="">Title Seccion</h6>
+
+                                <div class="task-action">
+                                    <div class="dropdown">
+                                        <a href="#">
+                                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M28.3335 12V7.5C28.3335 6.83696 28.0701 6.20107 27.6013 5.73223C27.1324 5.26339 26.4965 5 25.8335 5H21.0904C20.5968 5.00001 20.1142 5.14615 19.7035 5.42L17.9635 6.58C17.5528 6.85385 17.0702 6.99999 16.5766 7H6.8335C6.17045 7 5.53457 7.26339 5.06573 7.73223C4.59689 8.20107 4.3335 8.83696 4.3335 9.5V12" stroke="#5D4777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M2.33963 14.1594L3.35338 24.5C3.35338 25.1623 3.61617 25.7975 4.08407 26.2662C4.55196 26.7349 5.18672 26.9988 5.84901 27H26.8178C27.48 26.9988 28.1148 26.7349 28.5827 26.2662C29.0506 25.7975 29.3134 25.1623 29.3134 24.5L30.3271 14.1594C30.3491 13.8842 30.3139 13.6074 30.2237 13.3465C30.1335 13.0855 29.9902 12.8461 29.8029 12.6433C29.6157 12.4404 29.3884 12.2785 29.1355 12.1678C28.8826 12.0571 28.6095 12 28.3334 12H4.32713C4.05157 12.0008 3.77917 12.0586 3.52699 12.1697C3.27482 12.2808 3.04832 12.4428 2.86171 12.6456C2.67509 12.8483 2.53239 13.0874 2.44255 13.3479C2.35271 13.6084 2.31767 13.8847 2.33963 14.1594V14.1594Z" stroke="#5D4777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="pendingTask" style="will-change: transform;">
+                                            <a class="dropdown-item" href="javascript:void(0);">View</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="w-chart">
+
+                                <div class="w-chart-section total-visits-content">
+                                    <div class="w-detail">
+                                        <p class="w-title">Total Visits</p>
+                                        <p class="w-stats">423,964</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="w-chart-section paid-visits-content">
+                                    <div class="w-detail">
+                                        <p class="w-title">Paid Visits</p>
+                                        <p class="w-stats">7,929</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/nav.js"></script>
+</body>
+
+</html>
